@@ -21,7 +21,8 @@ The following variables are used for manual BoolExpr construction (see [Manually
 
 ## Interface
 
-This is the interface for functions passed to the constructors:
+This is the interface for functions passed to the constructors. Arguments are passed into the function upon evaluation.
+
 ```Lua
 function ([self [, reverse [, ...]]))
 ```
@@ -38,7 +39,8 @@ function ([self [, reverse [, ...]]))
 | **#** | **Type** | **Description** |
 | *1* | table | A newly constructed boolean expression |
 
-For tables, the interface is:
+For [BoolExpr Tables](5_glossary.md/#definitions), the interface is below. It should be an array table.
+
 ```Lua
 {expression_operator [, ...]}
 ```

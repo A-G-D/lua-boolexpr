@@ -2,7 +2,7 @@
 
 ## About Compilation
 
-Compiling boolean expressions returns a new and simplified version of that expresion. This can be done using the ```BoolExpr:compile()``` function.
+Compiling boolean expressions returns a new and simplified version of that expresion. This can be done using the ```BoolExpr:compile()``` method.
 
 <br/>
 
@@ -18,7 +18,7 @@ These are a list of all cases for simplification currently supported by the libr
 
 <br/>
 
-### Chained AND Operations:
+### Chained AND Operations
 
 ```Lua
 {

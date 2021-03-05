@@ -16,7 +16,7 @@
     - A BoolExpr instance. They are similar to Expressions but semantically different in that the latter does not neccessary have to be a product of a BoolExpr constructor.
 
 3. BoolExpr Table
-    - An table whose metatable is not ```BoolExpr``` and whose contents follow the specifications stated [here](0_api-reference.md/#interface) 
+    - A table whose contents follow the specifications stated [here](0_api-reference.md/#interface) and whose metatable is not ```BoolExpr```. Also known as [manually-constructed boolean expressions](0_api-reference.md/#interface).
 
 4. Expressions
     - The individual operands that together, compose a Boolean Expression. Note that BoolExpr Tables and Boolean Expressions qualifies for this definition too, since they can also be used to form much larger Boolean Expressions themselves.
