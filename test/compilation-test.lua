@@ -168,6 +168,64 @@ do
 }\
 "
 
+    i = #boolexpr + 1
+    boolexpr[i] = {}
+    boolexpr[i][1] =
+        {
+            BoolExpr.ALL,
+            {
+                BoolExpr.AND,
+                {
+                    BoolExpr.ALL,
+                    function () end,
+                    function () end,
+                    function () end
+                },
+                {
+                    BoolExpr.ALL,
+                    function () end,
+                    function () end,
+                    function () end,
+                    function () end,
+                    function () end
+                }
+            },
+            {
+                BoolExpr.AND,
+                {
+                    BoolExpr.AND,
+                    function () end,
+                    {
+                        BoolExpr.ALL,
+                        function () end,
+                        function () end
+                    }
+                },
+                function () end
+            },
+            function () end,
+            function () end
+        }
+    boolexpr[i][2] =
+"{\
+\tALL\
+\t1\
+\t2\
+\t3\
+\t4\
+\t5\
+\t6\
+\t7\
+\t8\
+\t9\
+\t10\
+\t11\
+\t12\
+\t13\
+\t14\
+}\
+"
+
     do
         local passed = true
 
