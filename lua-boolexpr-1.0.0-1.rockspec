@@ -1,7 +1,7 @@
 package = "Lua-BoolExpr"
-version = "1.0.0"
+version = "1.0.0-1"
 source = {
-    url = "git://github.com/A-G-D/lua-boolexpr,
+    url = "git://github.com/A-G-D/lua-boolexpr",
     tag = "v1.0.0"
 }
 description = {
@@ -9,7 +9,7 @@ description = {
     detailed = [[
         Lua-BoolExpr is a Boolean Expression library for Lua
     ]],
-    homepage = "http://a-g-d.github.io/lua-boolexpr/
+    homepage = "http://a-g-d.github.io/lua-boolexpr/",
     license = "MIT"
 }
 dependencies = {
@@ -19,7 +19,7 @@ build = {
     type = "builtin",
     modules = {
         boolexpr = "src/boolexpr.lua"
-    }
+    },
     copy_directories = {
         "docs",
         "tests"
