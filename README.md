@@ -18,6 +18,20 @@ BoolExpr is a library for handling boolean expresions. Its usage ranges from sim
 
 <br/>
 
+## Project Structure
+
+- ```/``` - Root directory
+
+- ```/docs``` - Documentation files
+
+- ```/examples``` - Contains sample usage / library features showcase
+
+- ```/src``` - Source code files
+
+- ```/tests``` - Unit test files 
+
+<br/>
+
 ## Documentation
 
 - [BoolExpr Documentation](https://a-g-d.github.io/lua-boolexpr/)
