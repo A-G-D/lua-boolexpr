@@ -1,12 +1,16 @@
-# API
+# API Reference
+
+Back to: [Table of Contents](index.md)
+
+<br/>
 
 ## Variables
 
-The following variables are used for manual BoolExpr construction (see [Manually Constructed BoolExpr](1_creating-expressions.md/#manually-constructed-boolean-expressions)).
+The following variables are used for manual BoolExpr construction (see [Manually Constructed BoolExpr](2_creating-expressions.md/#manually-constructed-boolean-expressions)).
 
 | Name | Type | Description |
 |---|---|---|
-| ```BoolExpr.DEF``` | integer | Constructed BoolExpr evaluates to true when [EF](5_glossary.md) returns true |
+| ```BoolExpr.DEF``` | integer | Constructed BoolExpr evaluates to true when [EF](99999_glossary.md) returns true |
 | ```BoolExpr.NOT``` | integer | Constructed BoolExpr evaluates to true when EF returns false |
 | ```BoolExpr.AND``` | integer | Constructed BoolExpr evaluates to true when both the left EF and right EF both return true |
 | ```BoolExpr.OR``` | integer | Constructed BoolExpr evaluates to true when the left EF, right EF, or both, return true |
@@ -39,7 +43,7 @@ function ([self [, reverse [, ...]]))
 | **#** | **Type** | **Description** |
 | *1* | table | A newly constructed boolean expression |
 
-For [BoolExpr Tables](5_glossary.md/#definitions), the interface is below. It should be an array table.
+For [BoolExpr Tables](99999_glossary.md/#definitions), the interface is below. It should be an array table.
 
 ```Lua
 {expression_operator [, ...]}
@@ -266,7 +270,7 @@ Evaluates a BoolExpr
 function BoolExpr.evaluate(expr, [reverse [, ...]])
 ```
 
-- Similar to the function above, but can be used for manually constructed BoolExprs using ordinary table (see [Creating Boolean Expressions](1_creating-expressions.md) for a sample of manual construction using ordinary table)
+- Similar to the function above, but can be used for manually constructed BoolExprs using ordinary table (see [Creating Boolean Expressions](2_creating-expressions.md/#manually-constructed-boolean-expressions) for a sample of manual construction using ordinary table)
 
 | Parameters: |||
 |---|---|---|
@@ -299,3 +303,9 @@ This method does not direcly change the expression itself. Instead, the simplifi
 |---|---|---|
 | **#** | **Type** | **Description** |
 | *1* | BoolExpr | A new ```BoolExpr``` representing the simplified expression |
+
+<br/>
+
+Next: [Overview](1_overview.md)
+
+[Back to top](#api-reference)
