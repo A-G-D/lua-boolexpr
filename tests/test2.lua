@@ -1,4 +1,4 @@
-require('boolexpr.src.boolexpr')
+require('src.boolexpr')
 
 do
 	local output = ''

@@ -1,4 +1,4 @@
-require('boolexpr.src.boolexpr')
+require('src.boolexpr')
 
 do
     local boolexpr = {}
@@ -37,7 +37,7 @@ do
 \tALL\
 \t1\
 \t{\
-\t\tIAND\
+\t\tXNOR\
 \t\t2\
 \t\t3\
 \t}\
@@ -135,7 +135,7 @@ do
         }
     boolexpr[i][2] =
 "{\
-\tIAND\
+\tXNOR\
 \t1\
 \t2\
 }\
@@ -160,7 +160,7 @@ do
 "{\
 \tAND\
 \t{\
-\t\tIAND\
+\t\tXNOR\
 \t\t1\
 \t\t2\
 \t}\
