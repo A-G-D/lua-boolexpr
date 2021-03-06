@@ -10,7 +10,7 @@ do
     local NOT 		= 2		---@type integer
     local AND 		= 3		---@type integer
     local OR 		= 4		---@type integer
-    local IAND 		= 5		---@type integer
+    local XNOR 		= 5		---@type integer
     local XOR 		= 6		---@type integer
     local NAND 		= 7		---@type integer
     local NOR 		= 8		---@type integer
@@ -21,7 +21,7 @@ do
     BoolExpr.NOT 	= NOT
     BoolExpr.AND 	= AND
     BoolExpr.OR 	= OR
-    BoolExpr.IAND 	= IAND
+    BoolExpr.XNOR 	= XNOR
     BoolExpr.XOR 	= XOR
     BoolExpr.NAND 	= NAND
     BoolExpr.NOR 	= NOR
@@ -31,13 +31,13 @@ do
     local op_neg = {
         [DEF] 	= NOT	, [NOT] = DEF,
         [AND] 	= NAND	, [OR] 	= NOR,
-        [IAND] 	= XOR	, [XOR] = IAND,
+        [XNOR] 	= XOR	, [XOR] = XNOR,
         [NAND] 	= AND	, [NOR] = OR
     }
     local op_str = {
         [DEF] 	= 'DEF'	, [NOT] = 'NOT',
         [AND] 	= 'AND'	, [OR] 	= 'OR',
-        [IAND] 	= 'IAND', [XOR] = 'XOR',
+        [XNOR] 	= 'XNOR', [XOR] = 'XOR',
         [NAND] 	= 'NAND', [NOR] = 'NOR',
         [ALL] 	= 'ALL'	, [ANY] = 'ANY'
     }
@@ -83,7 +83,7 @@ do
     ---@return BoolExpr
     function boolexpr.Iand(left_expr, right_expr)
         assert_expression(left_expr, right_expr)
-        return setmetatable({IAND, left_expr, right_expr}, boolexpr)
+        return setmetatable({XNOR, left_expr, right_expr}, boolexpr)
     end
     ---@param left_expr function|table|BoolExpr
     ---@param right_expr function|table|BoolExpr
@@ -143,7 +143,7 @@ do
                 boolexpr.__call(expr_t[reverse and 3 or 2], reverse, ...) or
                 boolexpr.__call(expr_t[reverse and 2 or 3], reverse, ...)
         end,
-        -- Operator: XAND (Exclusive-And)
+        -- Operator: XNOR (Exclusive-Nor)
         function (expr_t, reverse, ...)
             return
                 boolexpr.__call(expr_t[reverse and 3 or 2], reverse, ...) ==
@@ -234,7 +234,7 @@ do
         return
             op == DEF 	or op == NOT 	or
             op == AND 	or op == OR 	or
-            op == IAND 	or op == XOR 	or
+            op == XNOR 	or op == XOR 	or
             op == NAND 	or op == NOR 	or
             op == ALL 	or op == ANY
     end

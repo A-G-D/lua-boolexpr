@@ -10,7 +10,7 @@ The following variables are used for manual BoolExpr construction (see [Manually
 | ```BoolExpr.NOT``` | integer | Constructed BoolExpr evaluates to true when EF returns false |
 | ```BoolExpr.AND``` | integer | Constructed BoolExpr evaluates to true when both the left EF and right EF both return true |
 | ```BoolExpr.OR``` | integer | Constructed BoolExpr evaluates to true when the left EF, right EF, or both, return true |
-| ```BoolExpr.IAND``` | integer | Constructed BoolExpr evaluates to true when either the left EF equals the right EF |
+| ```BoolExpr.XNOR``` | integer | Constructed BoolExpr evaluates to true when either the left EF equals the right EF |
 | ```BoolExpr.XOR``` | integer | Constructed BoolExpr evaluates to true when either the left EF or right EF returns true |
 | ```BoolExpr.NAND``` | integer | Constructed BoolExpr evaluates to true when the left EF, right EF, or both, return false |
 | ```BoolExpr.NOR``` | integer | Constructed BoolExpr evaluates to true when both the left and right EFs return false |
@@ -130,7 +130,7 @@ Constructs a new BoolExpr object, which evaluates to true when *left_expr*, *rig
 <br/>
 
 ```Lua
-function BoolExpr.Iand(left_expr, right_expr)
+function BoolExpr.Xnor(left_expr, right_expr)
 ```
 
 Constructs a new BoolExpr object, which evaluates to true when both *left_expr* and *right_expr* are true or when both are false.
