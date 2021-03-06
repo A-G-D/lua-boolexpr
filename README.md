@@ -18,6 +18,12 @@ BoolExpr is a library for handling boolean expresions. Its usage ranges from sim
 
 <br/>
 
+## Installation
+
+\<INSTALLATION INSTRUCTION TO BE ADDED LATER\>
+
+<br/>
+
 ## Project Structure
 
 - ```/``` - Root directory
