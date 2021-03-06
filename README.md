@@ -20,7 +20,7 @@ BoolExpr is a library for handling boolean expresions. Its usage ranges from sim
 
 ## Documentation
 
-- [BoolExpr Documentation](docs/index.md)
+- [BoolExpr Documentation](https://a-g-d.github.io/lua-boolexpr/)
 
 <br/>
 
