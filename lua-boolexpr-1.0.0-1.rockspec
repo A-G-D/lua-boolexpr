@@ -9,7 +9,7 @@ description = {
     detailed = [[
         Lua-BoolExpr is a Boolean Expression library for Lua
     ]],
-    homepage = "http://a-g-d.github.io/lua-boolexpr/",
+    homepage = "https://a-g-d.github.io/lua-boolexpr/",
     license = "MIT"
 }
 dependencies = {
