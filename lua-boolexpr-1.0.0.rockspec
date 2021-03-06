@@ -1,8 +1,8 @@
 package = "Lua-BoolExpr"
-version = "1.1.0"
+version = "1.0.0"
 source = {
     url = "git://github.com/A-G-D/lua-boolexpr,
-    tag = "v1.1.0"
+    tag = "v1.0.0"
 }
 description = {
     summary = "Boolean Expression library for Lua",

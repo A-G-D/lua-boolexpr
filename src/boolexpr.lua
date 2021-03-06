@@ -6,44 +6,44 @@ do
     local boolexpr = getmetatable(BoolExpr)
     boolexpr.__index = boolexpr
 
-    local DEF 		= 1		---@type integer
-    local NOT 		= 2		---@type integer
-    local AND 		= 3		---@type integer
-    local OR 		= 4		---@type integer
-    local XNOR 		= 5		---@type integer
-    local XOR 		= 6		---@type integer
-    local NAND 		= 7		---@type integer
-    local NOR 		= 8		---@type integer
-    local ALL 		= 9		---@type integer
-    local ANY 		= 10	---@type integer
+    local DEF       = 1     ---@type integer
+    local NOT       = 2     ---@type integer
+    local AND       = 3     ---@type integer
+    local OR        = 4     ---@type integer
+    local XNOR      = 5     ---@type integer
+    local XOR       = 6     ---@type integer
+    local NAND      = 7     ---@type integer
+    local NOR       = 8     ---@type integer
+    local ALL       = 9     ---@type integer
+    local ANY       = 10    ---@type integer
 
-    BoolExpr.DEF 	= DEF
-    BoolExpr.NOT 	= NOT
-    BoolExpr.AND 	= AND
-    BoolExpr.OR 	= OR
-    BoolExpr.XNOR 	= XNOR
-    BoolExpr.XOR 	= XOR
-    BoolExpr.NAND 	= NAND
-    BoolExpr.NOR 	= NOR
-    BoolExpr.ALL 	= ALL
-    BoolExpr.ANY 	= ANY
+    BoolExpr.DEF    = DEF
+    BoolExpr.NOT    = NOT
+    BoolExpr.AND    = AND
+    BoolExpr.OR     = OR
+    BoolExpr.XNOR   = XNOR
+    BoolExpr.XOR    = XOR
+    BoolExpr.NAND   = NAND
+    BoolExpr.NOR    = NOR
+    BoolExpr.ALL    = ALL
+    BoolExpr.ANY    = ANY
 
     local op_neg = {
-        [DEF] 	= NOT	, [NOT] = DEF,
-        [AND] 	= NAND	, [OR] 	= NOR,
-        [XNOR] 	= XOR	, [XOR] = XNOR,
-        [NAND] 	= AND	, [NOR] = OR
+        [DEF]   = NOT   , [NOT] = DEF,
+        [AND]   = NAND  , [OR]  = NOR,
+        [XNOR]  = XOR   , [XOR] = XNOR,
+        [NAND]  = AND   , [NOR] = OR
     }
     local op_str = {
-        [DEF] 	= 'DEF'	, [NOT] = 'NOT',
-        [AND] 	= 'AND'	, [OR] 	= 'OR',
-        [XNOR] 	= 'XNOR', [XOR] = 'XOR',
-        [NAND] 	= 'NAND', [NOR] = 'NOR',
-        [ALL] 	= 'ALL'	, [ANY] = 'ANY'
+        [DEF]   = 'DEF' , [NOT] = 'NOT',
+        [AND]   = 'AND' , [OR] 	= 'OR',
+        [XNOR]  = 'XNOR', [XOR] = 'XOR',
+        [NAND]  = 'NAND', [NOR] = 'NOR',
+        [ALL]   = 'ALL' , [ANY] = 'ANY'
     }
     local op_up = {
-        [AND] 	= ALL	, [OR] = ANY,
-        [ALL] 	= AND	, [ANY] = OR,
+        [AND]   = ALL   , [OR]  = ANY,
+        [ALL]   = AND   , [ANY] = OR,
     }
 
     local function assert_expression(...)
