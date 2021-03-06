@@ -6,7 +6,7 @@ v1.1.0 by AGD
 
 ## Description
 
-BoolExpr is a library for handling boolean expresions. Its usage ranges from simple to complex.
+BoolExpr is a Lua library for handling boolean expresions. Its usage ranges from simple to complex.
 
 \<MORE DESCRIPTION TO BE ADDED LATER\>
 
