@@ -270,7 +270,7 @@ Evaluates a BoolExpr
 function BoolExpr.evaluate(expr, [reverse [, ...]])
 ```
 
-- Similar to the function above, but can be used for manually constructed BoolExprs using ordinary table (see [Creating Boolean Expressions](2_creating-expressions.md/#manually-constructed-boolean-expressions) for a sample of manual construction using ordinary table)
+Similar to the function above, but can be used for manually constructed BoolExprs using ordinary table (see [Creating Boolean Expressions](2_creating-expressions.md/#manually-constructed-boolean-expressions) for a sample of manual construction using ordinary table)
 
 | Parameters: |||
 |---|---|---|
