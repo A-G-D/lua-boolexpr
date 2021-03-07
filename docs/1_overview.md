@@ -22,6 +22,6 @@ The main class of this library is ```BoolExpr```, which is a list of operands op
 
 Previous: [API Reference](0_api-reference.md)
 
-Next: [Creating Boolean Expressions](2_creating-boolean-expressions.md)
+Next: [Creating Boolean Expressions](2_creating-expressions.md)
 
 [Back to top](#overview)

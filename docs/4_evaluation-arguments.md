@@ -49,8 +49,8 @@ end
 
 <br/>
 
-Previous: [Evaluating Boolean Expressions](3_evaluating-boolean-expressions)
+Previous: [Evaluating Boolean Expressions](3_evaluating-expressions)
 
-Next: [Compiling Boolean Expressions](5_compiling-boolean-expressions)
+Next: [Compiling Boolean Expressions](5_compiling-expressions)
 
 [Back to top](#expression-evaluation-arguments)

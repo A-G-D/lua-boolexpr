@@ -70,6 +70,6 @@ In this particular case, the ```BoolExpr.AND``` boolean expression operator is u
 
 Previous: [Overview](1_overview.md)
 
-Next: [Evaluating Boolean Expressions](3_evaluating-boolean-expressions.md)
+Next: [Evaluating Boolean Expressions](3_evaluating-expressions.md)
 
-[Back to top](#creating-boolean-expressions)
+[Back to top](#creating-expressions)
