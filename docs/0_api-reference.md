@@ -257,7 +257,7 @@ Evaluates a BoolExpr
 |---|---|---|
 | **Name** | **Type** | **Description** |
 | *reverse* | boolean | If true, the boolean expression is evaluated in reversed order |
-| *...* | any \| table | Arguments passed into all the evaluated expressions |
+| *...* | any | Arguments passed into all the evaluated expressions |
 
 | Return value: |||
 |---|---|---|
@@ -277,7 +277,7 @@ Similar to the function above, but can be used for manually constructed BoolExpr
 | **Name** | **Type** | **Description** |
 | *expr* | function \| table | BoolExpr or BoolExpr table to be evaluated |
 | *reverse* | boolean | If true, the expressions are evaluated in reversed order |
-| *...* | any \| table | Arguments passed into all the evaluated expressions |
+| *...* | any | Arguments passed into all the evaluated expressions |
 
 | Return value: |||
 |---|---|---|
