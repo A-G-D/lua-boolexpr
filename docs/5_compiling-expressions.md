@@ -243,13 +243,13 @@ These are a list of all cases for simplification currently supported by the libr
 }
 ```
 
-- NOT-XAND -> XOR
+- NOT-XNOR -> XOR
 
 ```Lua
 {
     NOT
     {
-        XAND
+        XNOR
         1
         2
     }
@@ -266,7 +266,7 @@ These are a list of all cases for simplification currently supported by the libr
 }
 ```
 
-- NOT-XOR -> XAND
+- NOT-XOR -> XNOR
 
 ```Lua
 {
@@ -283,7 +283,7 @@ These are a list of all cases for simplification currently supported by the libr
 
 ```Lua
 {
-    XAND
+    XNOR
     1
     2
 }

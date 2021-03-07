@@ -4,7 +4,7 @@ Back to: [Table of Contents](index.md)
 
 <br/>
 
-## Evaluating a ```BoolExpr```
+## Evaluating a BoolExpr
 
 Evaluating a ```BoolExpr``` is as simple as calling a function.
 
