@@ -34,9 +34,11 @@ Optionally, you can use install this via [luarocks](https://luarocks.org/) with 
 
 - ```/examples``` - Contains sample usage / library features showcase
 
+- ```/specs``` - .rockspec files for source building via luarocks
+
 - ```/src``` - Source code files
 
-- ```/tests``` - Unit test files 
+- ```/tests``` - Unit test files
 
 <br/>
 
