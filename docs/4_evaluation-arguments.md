@@ -24,14 +24,14 @@ end
 
 ## Expression Parameters
 
-Leaf expressions, which are usually normal functions, receive arguments provided both internally by the system and also by the evaluator. The first two arguments received by the function are from system. The first argument is the function itself and the second is a boolean flag that determines whether the evaluation is done in reversed order. The third and onwards are from the evaluator.
+Leaf expressions, which are usually normal functions, receive arguments provided both internally by the system and also by the evaluator. The first two arguments received by the function are provided by system. The first argument is the function itself and the second is a boolean flag that determines whether the evaluation is done in reversed order. The third and onwards are from the evaluator.
 
 ```Lua
 do
     local function is_even(self, reversed, n)
         return n % 2 == 0
     end
-    local function lt_limit(n)
+    local function lt_limit(_, _, n)
         return n < math.sqrt(10000)
     end
 

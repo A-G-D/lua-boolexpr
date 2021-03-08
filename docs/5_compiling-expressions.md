@@ -12,7 +12,7 @@ Compiling boolean expressions returns a new and simplified version of that expre
 
 ## Pros and Cons
 
-Simplifying expressions can reduce a fair amount of overhead during evaluation. This is especially true when the leaf expresions - meaning the function - only does light operations and the overall level of nesting of boolean operators are deep. On the other hand, the [compilation](5_glossary.md) itself is a complex process and creates a new boolean expression which further takes up memory. Therefore, it is often enough to only compile really complex expressions that are often evaluated in a performance sensitive parts of the script, and leave the seldom used or simple boolean expressions as is.
+Simplifying expressions can reduce a fair amount of overhead during evaluation. This is especially true when the leaf expresions - meaning the function - only does light operations and the overall level of nesting of boolean operators are deep. On the other hand, the [compilation](5_glossary.md) itself is a complex process and creates a new boolean expression which further takes up memory. Therefore, it is usually enough to only compile really complex expressions that are often evaluated in a performance sensitive parts of the script, and leave the seldom used or simple boolean expressions as is.
 
 <br/>
 
