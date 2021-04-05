@@ -2,8 +2,7 @@
 BoolExpr = setmetatable({}, {})
 
 do
-    ---@type BoolExpr
-    local boolexpr = getmetatable(BoolExpr)
+    local boolexpr = getmetatable(BoolExpr) ---@type BoolExpr
     boolexpr.__index = boolexpr
 
     local DEF       = 1     ---@type integer
@@ -47,8 +46,10 @@ do
     }
 
     local function assert_expression(...)
-        for i = 1, select("#", ...) do
-            assert(select(i, ...), "[ERROR]: Passed expression is nil!")
+        local t = table.pack(...)
+        local n = t.n
+        for i = 1, n do
+            assert(t[i] ~= nil, "[ERROR]: Passed expression is nil!")
         end
     end
 
