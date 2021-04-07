@@ -82,7 +82,7 @@ do
     ---@param left_expr function|table|BoolExpr
     ---@param right_expr function|table|BoolExpr
     ---@return BoolExpr
-    function boolexpr.Iand(left_expr, right_expr)
+    function boolexpr.Xnor(left_expr, right_expr)
         assert_expression(left_expr, right_expr)
         return setmetatable({XNOR, left_expr, right_expr}, boolexpr)
     end

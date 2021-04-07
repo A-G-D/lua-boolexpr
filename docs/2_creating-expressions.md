@@ -6,7 +6,7 @@ Back to: [Table of Contents](index.md)
 
 ## Creating Expressions Using Built-in Constructors
 
-Creating a BoolExpr constructor is pretty straightforward.
+Creating a BoolExpr object is pretty straightforward.
 
 ```Lua
 do
